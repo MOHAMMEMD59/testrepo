@@ -1,0 +1,16 @@
+# listing/templates/listing/base.html
+
+{% load static %}
+
+<html>
+    <head><title>Merchex</title></head>
+    <link rel="stylesheet" href="{% static 'listing/styles.css' %}" />
+
+    <body>
+       
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
+
+

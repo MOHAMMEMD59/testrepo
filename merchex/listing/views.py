@@ -11,7 +11,7 @@ from listing.models import Band
 def hello(request):
     bands = Band.objects.all()
     return render(request, 'listing/hello.html',
-    {'first_band': bands[0]})
+   context={"bands": bands})
 
 
 def aboutus(request):
